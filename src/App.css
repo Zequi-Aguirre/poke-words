@@ -1,0 +1,51 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.game-container {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 800px;
+  max-height: 600px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Center the Pokemon image vertically and horizontally */
+.pokemon-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+}
+
+/* Style the guide word without the box */
+.guide-letter {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  top: calc(50% + 150px); /* Adjust based on the size of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000; /* Adjust the color as needed */
+}
+
+/* Style the draggable letters without the box */
+.draggable-letter {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: move;
+  z-index: 10;
+  color: #000; /* Adjust the color as needed */
+}
